@@ -1,1 +1,24 @@
 Array
+
+Linear search code:
+class linera{
+     public static void main(String[] args) {
+        int num[]={2,9,1,7,11};
+        int target=7;
+
+        int result=linarSearch(num,target);
+        if(result!=-1)
+        System.out.println("element found at index no:"+result);
+        else
+        System.out.println("element not found");
+    }
+
+    public  static int linarSearch(int[] num, int target) {
+        for(int i=0;i<num.length;i++){
+            if(num[i]==target){
+                return i;
+            }
+        }
+        return -1;
+    }
+}
